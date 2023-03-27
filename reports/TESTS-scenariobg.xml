@@ -1,0 +1,87 @@
+<testsuite name="scenariobg.OrangeHrm Login" tests="3" errors="3" failures="0" skipped="0" time="0.004141" timestamp="2023-02-27T10:48:31.703530" hostname="Mangesh-pc"><testcase classname="scenariobg.OrangeHrm Login" name="Login to the HRM application" status="failed" time="0.002141"><error type="AttributeError" message="'Context' object has no attribute 'driver'">
+<![CDATA[
+Failing step: And Click on login button ... failed in 0.002s
+Location: features/scenariobg.feature:6
+Traceback (most recent call last):
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\orangehrmloginstep.py", line 27, in step_impl
+    context.driver.find_element('xpath', "//button[@type='submit']").click()
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\runner.py", line 321, in __getattr__
+    raise AttributeError(msg)
+AttributeError: 'Context' object has no attribute 'driver'
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login to the HRM application
+    Given I launch Browser ... passed in 0.000s
+    When I open application ... passed in 0.000s
+    And Enter valid username and password ... passed in 0.000s
+    And Click on login button ... failed in 0.002s
+    Then User must login to the dashboard page ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="scenariobg.OrangeHrm Login" name="Search user" status="failed" time="0.002"><error type="AttributeError" message="'Context' object has no attribute 'driver'">
+<![CDATA[
+Failing step: And Click on login button ... failed in 0.001s
+Location: features/scenariobg.feature:6
+Traceback (most recent call last):
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\orangehrmloginstep.py", line 27, in step_impl
+    context.driver.find_element('xpath', "//button[@type='submit']").click()
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\runner.py", line 321, in __getattr__
+    raise AttributeError(msg)
+AttributeError: 'Context' object has no attribute 'driver'
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Search user
+    Given I launch Browser ... passed in 0.000s
+    When I open application ... passed in 0.001s
+    And Enter valid username and password ... passed in 0.000s
+    And Click on login button ... failed in 0.001s
+    When navigate to search page ... skipped in 0.000s
+    Then Search page should be display ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="scenariobg.OrangeHrm Login" name="Advance user search" status="failed" time="0.0"><error type="AttributeError" message="'Context' object has no attribute 'driver'">
+<![CDATA[
+Failing step: And Click on login button ... failed in 0.000s
+Location: features/scenariobg.feature:6
+Traceback (most recent call last):
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\orangehrmloginstep.py", line 27, in step_impl
+    context.driver.find_element('xpath', "//button[@type='submit']").click()
+  File "C:\Users\Mangesh\PycharmProjects\BehaveProject\venv\lib\site-packages\behave\runner.py", line 321, in __getattr__
+    raise AttributeError(msg)
+AttributeError: 'Context' object has no attribute 'driver'
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Advance user search
+    Given I launch Browser ... passed in 0.000s
+    When I open application ... passed in 0.000s
+    And Enter valid username and password ... passed in 0.000s
+    And Click on login button ... failed in 0.000s
+    When navigate to advance search page ... skipped in 0.000s
+    Then advanced search page should display ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

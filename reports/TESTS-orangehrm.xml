@@ -1,0 +1,13 @@
+<testsuite name="orangehrm.OrangeHRM Logo" tests="1" errors="0" failures="0" skipped="0" time="16.02884" timestamp="2023-02-27T10:48:31.677692" hostname="Mangesh-pc"><testcase classname="orangehrm.OrangeHRM Logo" name="Logo presence on OrangeHRM home page" status="passed" time="16.02884"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Logo presence on OrangeHRM home page
+    Given launch chrome browser ... passed in 1.442s
+    When open orange hrm homepage ... passed in 14.331s
+    Then verify that the logo present on page ... passed in 0.155s
+    And close browser ... passed in 0.102s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

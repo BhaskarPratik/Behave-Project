@@ -1,0 +1,81 @@
+<testsuite name="login.login" tests="5" errors="0" failures="3" skipped="0" time="212.432088" timestamp="2023-02-27T10:48:13.548597" hostname="Mangesh-pc"><testcase classname="login.login" name="Login to the orangeHrm with valid parameters" status="passed" time="33.999516"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login to the orangeHrm with valid parameters
+    Given I launch chrome browser ... passed in 1.655s
+    When I open orange HRM homepage ... passed in 19.123s
+    And Enter username "Admin" and password "admin123" ... passed in 0.387s
+    And Click on login button ... passed in 1.466s
+    Then User must successfully login to the dashboard page ... passed in 11.369s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.login" name=" -- @1.1 " status="passed" time="50.396248"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline:  -- @1.1 
+    Given I launch chrome browser ... passed in 1.571s
+    When I open orange HRM homepage ... passed in 20.584s
+    And Enter username "Admin" and password "admin123" ... passed in 0.362s
+    And Click on login button ... passed in 1.644s
+    Then User must successfully login to the dashboard page ... passed in 26.236s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.login" name=" -- @1.2 " status="failed" time="31.913921"><failure type="AssertionError" message="Test Failed">
+<![CDATA[
+Failing step: Then User must successfully login to the dashboard page ... failed in 10.205s
+Location: features/login.feature:14
+Assertion Failed: Test Failed]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline:  -- @1.2 
+    Given I launch chrome browser ... passed in 1.442s
+    When I open orange HRM homepage ... passed in 19.062s
+    And Enter username "admin123" and password "admin" ... passed in 0.264s
+    And Click on login button ... passed in 0.941s
+    Then User must successfully login to the dashboard page ... failed in 10.205s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.login" name=" -- @1.3 " status="failed" time="47.445807"><failure type="AssertionError" message="Test Failed">
+<![CDATA[
+Failing step: Then User must successfully login to the dashboard page ... failed in 26.200s
+Location: features/login.feature:14
+Assertion Failed: Test Failed]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline:  -- @1.3 
+    Given I launch chrome browser ... passed in 1.429s
+    When I open orange HRM homepage ... passed in 18.571s
+    And Enter username "adminxyz" and password "admin123" ... passed in 0.242s
+    And Click on login button ... passed in 1.003s
+    Then User must successfully login to the dashboard page ... failed in 26.200s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.login" name=" -- @1.4 " status="failed" time="48.676595"><failure type="AssertionError" message="Test Failed">
+<![CDATA[
+Failing step: Then User must successfully login to the dashboard page ... failed in 26.201s
+Location: features/login.feature:14
+Assertion Failed: Test Failed]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline:  -- @1.4 
+    Given I launch chrome browser ... passed in 1.413s
+    When I open orange HRM homepage ... passed in 19.160s
+    And Enter username "admin" and password "adminxyz" ... passed in 0.403s
+    And Click on login button ... passed in 1.500s
+    Then User must successfully login to the dashboard page ... failed in 26.201s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
